@@ -18,10 +18,10 @@ func main() {
 	fmt.Println(l)
 	hh := handlers.NewHello(l) //handlers.NewHello(l)
 	// gh := handlers.NewGoodbye(l)
-	ph := handlers.NewProducts(l)
+	// ph := handlers.NewProducts(l)
 
 	sm := http.NewServeMux()
-	sm.Handle("/", ph)
+	sm.Handle("/", hh)
 	// sm.Handle("/goodbye", gh)
 
 	s := &http.Server{
