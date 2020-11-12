@@ -19,6 +19,7 @@ func main() {
 	hh := handlers.NewHello(l) //handlers.NewHello(l)
 	// gh := handlers.NewGoodbye(l)
 	// ph := handlers.NewProducts(l)
+	// prueba
 
 	sm := http.NewServeMux()
 	sm.Handle("/", hh)
